@@ -39,3 +39,68 @@
     width :990px;
     border: 1px solid #c80000;/*thêm thuộc tính mới*/
 }
+
+/*Slider*/
+
+.sliderboxHead{
+    background-color: #cc6633;
+    width: 990px;
+    height: 300px;
+    overflow: hidden;
+}
+
+#sliderbox{
+    position: relative;
+    width: 3960px; /*đã fix lại slider*/
+    animation-name: slideranimation;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+#sliderbox img{
+    float: left;
+}
+
+@keyframes slideranimation{ /*Đã fix lại slider*/
+    0%
+    {
+        left: 0px;
+    }
+    20%
+    {
+        left: 0px;
+    }
+    25%
+    {
+        left: -990px;
+    }
+    45%
+    {
+        left: -990px;
+    }
+    50%
+    {
+        left:-1980px;
+    }
+    70%
+    {
+        left: -1980px;
+    }
+    75%
+    {
+        left: -2970px;
+    }
+    95%
+    {
+        left: -2970px;
+    }
+    /* 100%
+    {
+        left: -3600px;
+    }
+    105%
+    {
+        left: -3600px;
+    } */
+    
+}
