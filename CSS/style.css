@@ -14,13 +14,60 @@
 .logo{
     float:left;
 }
-
+/*sidebar*/
 .sidebar{
     width: 235px;
     height: 500px;
     float: left;
-    background-color: #3366cc;
+    /* background-color: #5D8EF0; */
 }
+.sidebar dt{
+    text-align:center;
+    color:whitesmoke;
+    background: #e74c3c;
+    padding: 20px;
+    font-weight:bold;
+    margin: 0;
+}
+
+#sidebar dl{
+	margin:0px;
+	padding: 0px;
+}
+
+.sidebar dl dd{
+    border-bottom:1px solid whitesmoke;
+    
+}
+
+.sidebar dl dd a{
+    color: #F44336;
+    font-weight: bold;
+    padding: 3px 20px;
+    display: block;
+    text-decoration: none;
+}
+
+.sidebar dl dd a:hover{
+    background: #74A7B7;
+}
+
+/*Menu sidebar*/
+.menu {
+    margin: 0px;
+    padding: 0px;
+  }
+
+.menu {
+    margin: 0 0 1px 0;
+    list-style: none;
+    background-color: #33ccff;
+    color: #fff;
+    width: 225px;
+    height: 30px;
+    line-height: 25px;
+    padding-left: 10px;
+  }
 
 
 .content{
@@ -33,7 +80,7 @@
 }
 
 .footer{
-    background-color: #6633cc;
+    /* background-color: #6633cc; */
     clear:both;
 	background:#C80000;
 	padding: 8px 0px 10px 0px;/*fix lại footer*/
