@@ -1,3 +1,6 @@
+<?php
+    include_once ('lib/DataProvider.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
