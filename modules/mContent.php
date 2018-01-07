@@ -5,5 +5,11 @@
         case 1:
             include ("pages/pHome.php");
             break;
+        case 2: 
+            include ("pages/pSanPhamTheoHang.php");
+            break;
+        case 3: 
+            include ("pages/pSanPhamTheoLoai.php");
+            break;
     }
 ?>
