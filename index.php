@@ -1,4 +1,8 @@
 <?php
+    session_start();
+    if(isset($_GET["a"]) && $_GET["a"] != 0 && $_GET["a"] > 10)
+        $_SESSION["curURL"] = $_SERVER["REQUEST_URI"];
+
     include_once ('lib/DataProvider.php');
 ?>
 <!DOCTYPE html>
