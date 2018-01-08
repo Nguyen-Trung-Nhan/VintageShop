@@ -205,3 +205,78 @@
     color: #F96;
     text-align: right;
 }
+/* Chi tiet cua san pham */
+
+#chitietsp
+{
+	padding: 10px 10px 10px 10px;
+	min-height:220px;
+}
+
+#chitietleft
+{
+	float: left; /*thuộc tính này chưa được sử dụng nên bỏ cũng đc*/
+    margin-bottom: 10px;
+    display:inline-block;
+    position: relative;
+}
+
+#chitietleft img
+{
+	width: 200px;
+    height: 150px;
+    display: block;
+}
+
+#chitietright
+{
+	float:right;
+	width: 300px;
+	margin-left: 10px;
+    margin-bottom:10px;
+}
+
+
+#mota
+{
+	clear:both;
+	font-style:italic;
+	font-size:12px;
+}
+
+.label
+{
+	width: 100px;
+	text-align:right;
+	font-size:13px;
+	display:inline-block;
+	margin-right:5px;
+}
+
+.data
+{
+	font-size:14px;
+	font-weight:bold;
+	color:#666;
+}
+
+.productname
+{
+	font-size: 18px;
+	font-weight:bold;
+	color:#F69;
+}
+
+.price
+{
+	font-size: 18px;
+	font-weight:bold;
+	color:#F93;
+}
+
+.factory
+{
+	font-size: 16px;
+	font-weight:bold;
+	color:#3C6;
+}
