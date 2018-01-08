@@ -29,5 +29,8 @@
         case 13:
             include ("pages/exCapNhatGioHang.php");
             break;
+        case 16:
+            include ("pages/pTimKiem.php");
+            break;
     }
 ?>
