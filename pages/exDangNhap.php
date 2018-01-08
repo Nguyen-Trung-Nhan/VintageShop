@@ -8,7 +8,7 @@
                 FROM TaiKhoan
                 WHERE BiXoa = 0 AND TenDangNhap = '$us'
                                 AND MatKhau = '$ps'";
-        M
+        
         $result = DataProvider::ExecuteQuery($sql);
         $row = mysqli_fetch_array($result);
         if($row != null)
@@ -23,19 +23,15 @@
             }
             else
             {
-                if(strrpos($url, "a=0" ) != "")
-                {
+                if(strrpos($url, "a=0") != "")
                     DataProvider::ChangeURL("index.php");
-                }
                 else
-                {
                     //  DataProvider::ChangeURL("" . $_SESSION["curURL"]);
                     DataProvider::ChangeURL("index.php");
-                }
             }
-            else
-                DataProvider::ChangeURL("index.php?a=0&id=4");
         }
+        else
+            DataProvider::ChangeURL("index.php?a=0&id=4");
     }
     else
         DataProvider::ChangeURL("index.php?a=0&id=4");

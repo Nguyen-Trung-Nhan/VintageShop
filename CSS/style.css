@@ -327,3 +327,36 @@
     float: right;
 }
 
+/* ---------------------------------------- */
+.giohang{
+    text-align: center;
+}
+
+#quanlygiohang{
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+}
+
+#quanlygiohang h1{
+    color: #F63;
+    font-weight: bold;
+}
+
+#quanlygiohang table{
+    border: 1px solid #369;
+    width: 645px; /*Sửa lại kích thước của bảng cho phù hợp với content*/
+    padding: 0;
+    border-spacing: 0px;
+    text-align:left;
+    margin-left: 45px; /*thêm mới thuộc tính để fix bảng quản lý giỏ hàng*/
+}
+
+#quanlygiohang table tr td, #quanlygiohang table tr th{
+    border: 1px solid #369;
+    margin: 0;
+    padding: 5px;
+}
+
+#quanlygiohang table tr th{
+    text-align: center;
+}

@@ -4,6 +4,7 @@
         $_SESSION["curURL"] = $_SERVER["REQUEST_URI"];
 
     include_once ('lib/DataProvider.php');
+    include_once ('lib/ShoppingCart.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
