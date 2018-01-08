@@ -1,7 +1,7 @@
 .container{
     width:990px;
     margin: auto;
-    background-color: #cc66cc;
+    /* background-color: #cc66cc; */
 }
 
 .header{
@@ -9,7 +9,7 @@
     width: 990px;
     height: 100px;
     /* background: url("img/bg-header.jpg") repeat-x; */
-   }
+}
 
 .logo{
     float:left;
@@ -301,3 +301,29 @@
     font-family:"Palatino Linotype";
     color: #34495e;
 }
+
+.header input{
+    border-radius: 5px;
+    font-weight:bold;
+    font-family:"Palatino Linotype";
+    color: #34495e;
+}
+/*form đăng nhập*/
+
+.formDangNhap{
+    float: right;
+}
+
+.frmLogin input{
+    border-radius: 5px;
+    font-weight:bold;
+    font-family:"Palatino Linotype";
+    color: #34495e;
+    
+}
+
+#Thongtintaikhoan{
+    margin: 68px -290px 0px 0;
+    float: right;
+}
+
