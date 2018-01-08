@@ -17,9 +17,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="header"> 
             <?php include ('modules/mHeader.php'); ?>
-        </div>
         <div class="sidebar">
             <?php include ('modules/mMenuHang.php'); ?>
             <?php include ('modules/mMenuLoai.php'); ?>   
