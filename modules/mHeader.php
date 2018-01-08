@@ -1,4 +1,4 @@
-<div class="header"> 
+
     <a href="index.php">
             <img src="img/logo.jpg" alt="image not found" class="logo">
     </a>
@@ -10,4 +10,3 @@
         <img src="img/clock-slider3.jpg" alt="image not found">
         <img src="img/clock-slider4.jpg" alt="image not found">
     </div>
-</div>
