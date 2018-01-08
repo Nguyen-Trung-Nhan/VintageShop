@@ -280,3 +280,24 @@
 	font-weight:bold;
 	color:#3C6;
 }
+
+/* form tim kiem */
+
+.formTimKiem{
+    float: right;
+    margin: 0 0 40px 0;
+}
+
+.formTimKiem button{
+    border-radius: 50%;
+    font-weight:bold;
+    font-family:"Palatino Linotype";
+    color: #34495e;
+}
+
+.header form{
+    margin: 0px 0px 0px 0px;
+    font-weight:bold;
+    font-family:"Palatino Linotype";
+    color: #34495e;
+}
