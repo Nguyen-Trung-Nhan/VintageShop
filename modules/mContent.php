@@ -11,5 +11,8 @@
         case 3: 
             include ("pages/pSanPhamTheoLoai.php");
             break;
+        case 4:
+            include ("pages/pChiTietCuaSanPham.php");
+            break;
     }
 ?>
