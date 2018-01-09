@@ -38,5 +38,11 @@
         case 16:
             include ("pages/pTimKiem.php");
             break;
+        case 17:
+            include ("pages/qlGioHang/exDatHang.php");
+            break;
+        case 18:
+            include ("pages/pMuaThanhCong.php");
+            break;
     }
 ?>
