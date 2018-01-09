@@ -53,4 +53,4 @@
 
 <form action="index.php?a=19" method="POST">
     Tìm Kiếm:<input type="text" name="txtTimKiem" id="txtTimKiem"><input type="submit" value="Tìm"></a>
-</form
+</form>
