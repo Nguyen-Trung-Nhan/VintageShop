@@ -1,8 +1,8 @@
-<h2>Liệt Kê Hãng Sản Phẩm</h2>
+<h2>Liệt Kê Hãng Sản Xuất</h2>
 <table width="600" border="1" cellspacing="0">
     <tr>
-        <td>Mã Hãng Sản Phẩm</td>
-        <td>Tên Hãng Sản Phẩm</td>
+        <td>Mã Hãng Sản Xuất</td>
+        <td>Tên Hãng Sản Xuất</td>
         <td>Logo URL</td>
     </tr>
 <?php
