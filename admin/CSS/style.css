@@ -1,0 +1,68 @@
+.container{
+    width:990px;
+    margin: auto;
+}
+
+.header{
+    background-color:whitesmoke;
+    width: 990px;
+    height: 100px;
+}
+
+.content{
+    float :left;
+    background-color: whitesmoke;
+    width: 747px; /*đã fix lại content cho phù hợp với 990px của header*/
+    min-height: 500px;
+    border: 1px solid #6688cc;
+    margin: 15px 0px 5px 5px;
+}
+
+
+.footer{
+    clear:both;
+	background:#C80000;
+	padding: 8px 0px 10px 0px;/*fix lại footer*/
+	text-align:center;
+	font-weight:bold;
+    color:#FFF;
+    width :990px;
+    border: 1px solid #c80000;/*thêm thuộc tính mới*/
+}
+
+/* -------Chưa có hiệu lực---------- */
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------*/
+/* menusidebar */
+.sidebar{
+    margin-top: 15px;
+    background-color: #33ccff;
+    color: #fff;
+    width: 235px;
+    line-height: 30px;
+    height: 500px;
+    float: left;
+}
+
+.sidebar  dt{
+    color:whitesmoke;
+    background: #e74c3c;
+    padding: 0px 13px 13px 13px;
+    font-weight:bold;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.sidebar dl{
+    margin: 0px;
+}
+
+.sidebar dl a{
+    text-decoration: none;
+}
