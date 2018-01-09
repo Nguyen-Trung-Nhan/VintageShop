@@ -1,4 +1,5 @@
 <h2>Sản Phẩm Tìm Kiếm</h2>
+<a href="index.php?a=19"><input type="button" name="btnNangCao" id="btnNangCao" value="Nâng Cao"></a><br>
 <?php
     if(isset($_POST["txtTimKiem"]) && ($_POST["txtTimKiem"] != "")){
     $timKiem = $_POST['txtTimKiem'];
