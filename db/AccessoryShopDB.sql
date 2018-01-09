@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1:3306
--- Thời gian đã tạo: Th1 09, 2018 lúc 06:09 PM
+-- Thời gian đã tạo: Th1 09, 2018 lúc 08:12 PM
 -- Phiên bản máy phục vụ: 5.7.19
 -- Phiên bản PHP: 5.6.31
 
@@ -21,6 +21,8 @@ SET time_zone = "+00:00";
 --
 -- Cơ sở dữ liệu: `accessoryshop`
 --
+CREATE DATABASE IF NOT EXISTS `accessoryshop` DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+USE `accessoryshop`;
 
 -- --------------------------------------------------------
 
