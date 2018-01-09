@@ -31,7 +31,7 @@
         case 10:
             include ("pages/pTimKiemLoaiSanPham.php");
             break;
-            case 11:
+        case 11:
             include ("pages/pQuanLyNhaSanXuat.php");
             break;
         case 12:
@@ -51,6 +51,12 @@
             break;
         case 17 :
             include ("pages/pQuanLyDonHang.php");
+            break;
+        case 18 :
+            include ("pages/pLietKeDonDatHang.php");
+            break;
+        case 19:
+            include ("pages/pTimKiemDonDatHang.php");
             break;
         case 20:
             include ("pages/exDangXuat.php");
