@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1:3306
--- Thời gian đã tạo: Th12 26, 2017 lúc 11:59 PM
+-- Thời gian đã tạo: Th1 09, 2018 lúc 06:09 PM
 -- Phiên bản máy phục vụ: 5.7.19
 -- Phiên bản PHP: 5.6.31
 
@@ -51,9 +51,11 @@ INSERT INTO `chitietdondathang` (`MaChiTietDonDatHang`, `SoLuong`, `GiaBan`, `Ma
 ('08101200103', 5, 3800000, '081012003', 2),
 ('08101200200', 6, 2800000, '081012002', 4),
 ('08101200300', 2, 2200000, '081012003', 15),
+('1137047370', 1, 216000, '8670', 1),
 ('13121200100', 9, 1600000, '131212001', 8),
 ('13121200200', 1, 1800000, '131212002', 6),
-('13121200201', 7, 3000000, '131212002', 7);
+('13121200201', 7, 3000000, '131212002', 7),
+('1614761931', 1, 216000, '35616', 10);
 
 -- --------------------------------------------------------
 
@@ -82,7 +84,9 @@ INSERT INTO `dondathang` (`MaDonDatHang`, `NgayLap`, `TongThanhTien`, `MaTaiKhoa
 ('081012002', '2012-10-07 00:00:00', 495000, 2, 1),
 ('081012003', '2012-10-08 00:00:00', 4400000, 1, 1),
 ('131212001', '2012-11-08 00:00:00', 10500000, 2, 1),
-('131212002', '2012-12-03 00:00:00', 600000, 2, 1);
+('131212002', '2012-12-03 00:00:00', 600000, 2, 1),
+('35616', '2018-01-09 19:35:44', 216000, 1, 1),
+('8670', '2018-01-09 23:43:51', 216000, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -105,11 +109,11 @@ CREATE TABLE IF NOT EXISTS `hangsanxuat` (
 
 INSERT INTO `hangsanxuat` (`MaHangSanXuat`, `TenHangSanXuat`, `LogoURL`, `BiXoa`) VALUES
 (1, 'Resin', 'Resin.png', 0),
-(2, ' Rolex', ' Rolex.png', 0),
+(2, ' Rolex', 'Rolex.png', 0),
 (3, 'Tiffany', 'Tiffany.png', 0),
-(4, 'Cartier', 'Cartier.png', 0),
-(5, 'Oliver Peoples', 'OliverPeoples.png', 0),
-(6, 'North Face', 'NorthFace.png', 0);
+(4, 'Cartier', 'Cartier.jpg', 0),
+(5, 'Oliver Peoples', 'OliverPeoples.jpeg', 0),
+(6, 'North Face', 'NorthFace.gif', 0);
 
 -- --------------------------------------------------------
 
@@ -192,7 +196,7 @@ CREATE TABLE IF NOT EXISTS `sanpham` (
 --
 
 INSERT INTO `sanpham` (`MaSanPham`, `TenSanPham`, `HinhURL`, `GiaSanPham`, `NgayNhap`, `SoLuongTon`, `SoLuongBan`, `SoLuocXem`, `MoTa`, `BiXoa`, `MaLoaiSanPham`, `MaHangSanXuat`) VALUES
-(1, 'Vòng đeo Wood Resin', 'Resin_Wood_Resin.jpg', 216000, '2017-12-27 00:00:00', 15, 9, 25, 'Vòng đeo được làm từ nhiều chất liệu bắt mắt, chi tiết và chất lượng.', 0, 1, 1),
+(1, 'Vòng đeo Wood Resin', 'Resin_Wood_Resin.jpg', 216000, '2017-12-27 00:00:00', 0, 9, 25, 'Vòng đeo được làm từ nhiều chất liệu bắt mắt, chi tiết và chất lượng.', 0, 1, 1),
 (2, 'Vòng cổ Dreamcatcher', 'Cartier_Dreamcatcher.jpg', 250000, '2017-12-27 00:00:00', 16, 10, 30, 'vòng cổ Dreamcatcher được làm hoàn toàn thủ công với cách đan vô cùng tỉ mỉ và tinh tế tới từng chi tiết sẽ tạo nên một phong cách rất riêng cho bạn!', 0, 2, 4),
 (3, 'Đồng hồ Day Date', 'Rolex_Day_Date.jpg', 21000000, '2017-03-27 00:00:00', 17, 5, 25, 'Day Date - chiếc đồng hồ đeo tay đầu tiên làm hoàn toàn từ bạch kim hoặc vàng 18 ct, dành cho những gì sang trọng nhất.', 0, 3, 2),
 (4, 'Dây chuyền Zodiac', 'Cartier_Zodiac.jpg', 199000, '2017-01-28 00:00:00', 18, 10, 36, 'Zodiac - chuỗi dây chuyền của 12 chòm sao, đại diện cho 12 cung hoàng đạo đầy huyền bí.', 0, 4, 4),
@@ -201,7 +205,7 @@ INSERT INTO `sanpham` (`MaSanPham`, `TenSanPham`, `HinhURL`, `GiaSanPham`, `Ngay
 (7, 'Balo  Mainfame 113256', 'Northface_Balo_Mainfame_113256.jpg', 500000, '2017-10-07 00:00:00', 19, 8, 32, 'Bạn cần một chiếc balo thật lớn cho chuyến đi dài ngày? Bạn cần một chiếc balo thật chắc chắn để yên tâm khi đi du lịch? Bạn muốn một chiếc balo có thiết kế thân thiện với người dùng, có ngăn laptop, ngăn bảo vệ máy ảnh, ngăn để nước…?', 0, 7, 6),
 (8, 'Ví da  Rag & Bone', 'Tiffany_Rag_Bone.jpg', 799000, '2017-09-03 00:00:00', 22, 16, 33, 'Nếu bạn không phải tuýp người hào nhoáng thích chưng diện mà thuộc dạng coi trọng chất lượng, đánh giá chất lượng qua thiết kế và chất liệu, chiếc ví đen gấp đôi cơ bản này sẽ là một trong những mẫu thiết kế hoàn hảo dành cho bạn. Lớp da đen mềm mại với một khuy bạc đơn giản ở mặt trước sẽ rất bắt mắt mà lại không lòe loẹt. ', 0, 8, 3),
 (9, 'Ốp lưng ĐT ', 'Resin_OpLungDT.jpg', 50000, '2017-11-02 00:00:00', 10, 20, 50, 'Ốp lưng điện thoại thời trang, nâng niu chiếc điện thoại của bạn', 0, 10, 1),
-(10, 'Vòng đeo Wood Resin ver 2.0', 'Resin_Wood_Resin_02.jpg', 216000, '2017-12-27 00:00:00', 22, 19, 46, 'Vòng đeo được làm từ nhiều chất liệu bắt mắt, chi tiết và chất lượng.', 0, 1, 1),
+(10, 'Vòng đeo Wood Resin ver 2.0', 'Resin_Wood_Resin_02.jpg', 216000, '2017-12-27 00:00:00', 0, 19, 46, 'Vòng đeo được làm từ nhiều chất liệu bắt mắt, chi tiết và chất lượng.', 0, 1, 1),
 (13, 'Kính mát Darkblue  Eyeglasses', 'OliverPeoples _Darkblue_Eyeglasses.jpg', 650000, '2017-07-15 00:00:00', 26, 11, 18, 'Kính mát chống nắng, thích hợp cho những con người đam mê du lịch.', 0, 6, 5),
 (15, 'Giày phượt trên mọi địa hình', 'OliverPeoples _Giay_Phuot.jpg', 1024000, '2017-06-24 00:00:00', 30, 20, 60, 'Việc trang bị giày đi bộ đường dài cũng có thể trở nên rất cần thiết. Nhờ đế giày cứng hơn, cổ giày cao hơn mắt cá, chúng sẽ tốt hơn cho việc bảo vệ chân.', 0, 9, 5),
 (16, 'Balo D\'Leh Sling', 'Northface_DLeh_Sling.png', 4350000, '2017-12-09 00:00:00', 17, 25, 44, 'Bạn cần một chiếc balo thật lớn cho chuyến đi dài ngày? Bạn cần một chiếc balo thật chắc chắn để yên tâm khi đi du lịch? Bạn muốn một chiếc balo có thiết kế thân thiện với người dùng, có ngăn laptop, ngăn bảo vệ máy ảnh, ngăn để nước…?', 0, 7, 6),
