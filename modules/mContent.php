@@ -17,6 +17,9 @@
         case 6:
             include ("pages/pQuanLyGioHang.php");
             break;
+        case 8:
+            include ("pages/pDangKy.php");
+            break;
         case 10:
             include ("pages/exDangNhap.php");
             break;
@@ -28,6 +31,9 @@
             break;
         case 13:
             include ("pages/exCapNhatGioHang.php");
+            break;
+        case 15:
+            include ("pages/exDangKy.php");
             break;
         case 16:
             include ("pages/pTimKiem.php");
