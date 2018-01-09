@@ -18,6 +18,24 @@
     margin: 15px 0px 5px 5px;
 }
 
+.content h2{
+    font: bold 30px arial;
+    color: #ff0000;
+    padding-left: 20px;
+    margin-left: 190px; /*Đã fix lại magrin cho 2 dòng chữ sản phẩm bán chạy và mới nhất*/
+}
+.content h1{
+    font: bold 30px;
+    color: #ff0000;
+    margin-left: 190px;
+}
+.TieuDepHome{
+    padding-left: 0px;
+}
+#mota{
+    color: red;
+    font-size: 20px;
+}
 
 .footer{
     clear:both;
@@ -29,13 +47,57 @@
     width :990px;
     border: 1px solid #c80000;/*thêm thuộc tính mới*/
 }
+#Thongtintaikhoan{
+    float: right;
+    padding-top: 75px;
+    padding-right: 5px;
+}
 
 /* -------Chưa có hiệu lực---------- */
+.box{
+    margin:5px; 
+	float:left;
+	width:250px;
+    text-align:center;
+    padding-right: 60px;
+    padding-left: 30px;
+}
 
+/* định dạng cho các block chẵn */
+.box:nth-child(even){
+	border-top: 5px solid rgb(156, 211, 165);
+	margin-right: 15px;
+}
 
+/* định dạng cho các block lẻ */
+.box:nth-child(odd){
+	border-top: 5px solid rgb(119, 184, 219);
+	margin-left: 15px;
+} 
 
+.box img{
+	width: 230px;
+	height: 150px;
+}
 
+.pname{
+    font: bold 14px arial;
+    color: #F39;
+    margin-top: 5px;
+}
 
+.pprice{
+    font: bold 12px arial;
+    color: #f30;
+}
+
+.action{
+    font: italic bold 10px arial;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    color: #F96;
+    text-align: right;
+}
 
 
 /*-----------------------------------------------------------------*/
@@ -65,4 +127,8 @@
 
 .sidebar dl a{
     text-decoration: none;
+}
+
+.a:hover{
+    background: #74A7B7;
 }
