@@ -2,6 +2,9 @@
     $a = (isset($_GET['a'])) ? $_GET['a'] : 1; 
     
     switch ($a) {
+        case 0:
+            include ("pages/pLoi.php");
+            break;
         case 1:
             include ("pages/pHome.php");
             break;
