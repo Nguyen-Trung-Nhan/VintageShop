@@ -14,6 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="CSS/style.css" type="text/css">
     <script src="JS/jquery.min.js"></script>
+    <script src="JS/jquery.zoom.min.js"></script>
     <title>Vintage Shop</title>
 </head>
 <body>
@@ -30,5 +31,10 @@
                 <?php include ('modules/mFooter.php'); ?>                
         </div>
     </div>
+    <script>
+    $(document).ready(function(){
+        $('#chitietleft').zoom();
+    });
+</script>
 </body>
 </html>
