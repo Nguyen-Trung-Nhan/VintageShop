@@ -48,9 +48,9 @@
 </form>
 
 <span><strong>Nhấn vào Liệt kê để xem thông tin các đơn hàng: </strong></span>
-<a href="#"><input type="submit" value="Liệt kê"></a>
+<a href="index.php?a=18"><input type="submit" value="Liệt kê"></a>
 
 
-<form action="#" method="POST">
+<form action="index.php?a=19" method="POST">
     Tìm Kiếm:<input type="text" name="txtTimKiem" id="txtTimKiem"><input type="submit" value="Tìm"></a>
-</form>
+</form
