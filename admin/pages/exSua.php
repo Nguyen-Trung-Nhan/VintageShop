@@ -74,4 +74,99 @@ if(isset($_GET["b"]) && $_GET["b"] == 2 && isset($_POST["txtMaLoaiSanPham"]) && 
     DataProvider::ChangeURL("index.php?a=8");
 }
 
+
+if(isset($_GET["b"]) && $_GET["b"] == 3)
+{
+    if(isset($_POST["txtTenHangSanXuat"]) && isset($_POST["txtMaHangSanXuat"]) && $_POST["txtTenHangSanXuat"] != "")
+    {
+        $tenHangSanXuat = $_POST["txtTenHangSanXuat"];
+        $maHangSanXuat = $_POST["txtMaHangSanXuat"];
+        $sql = "UPDATE hangsanxuat
+        SET TenHangSanXuat = '$tenHangSanXuat'
+        WHERE MaHangSanXuat = '$maHangSanXuat' and BiXoa = 0";
+        DataProvider::ExecuteQuery($sql);
+    }
+
+    if(isset($_POST["txtLogoURL"]) && isset($_POST["txtMaHangSanXuat"]) && $_POST["txtLogoURL"] != "")
+    {
+        $logoURL = $_POST["txtLogoURL"];
+        $maHangSanXuat = $_POST["txtMaHangSanXuat"];
+        $sql = "UPDATE hangsanxuat
+        SET LogoURL = '$logoURL'
+        WHERE MaHangSanXuat = '$maHangSanXuat' and BiXoa = 0";
+        DataProvider::ExecuteQuery($sql);
+    }
+    DataProvider::ChangeURL("index.php?a=11");
+}
+
+if(isset($_GET["b"]) && $_GET["b"] == 4)
+{
+    if(isset($_POST["txtTenDangNhap"]) && isset($_POST["txtMaTaiKhoan"]) && $_POST["txtTenDangNhap"] != "")
+    {
+        $maTaiKhoan = $_POST["txtMaTaiKhoan"];
+        $tenDangNhap = $_POST["txtTenDangNhap"];  
+        $sql = "UPDATE taikhoan
+        SET TenDangNhap = '$tenDangNhap'
+        WHERE MaTaiKhoan = '$maTaiKhoan' and BiXoa = 0";
+        DataProvider::ExecuteQuery($sql);
+    }
+
+    if(isset($_POST["txtMatKhau"]) && isset($_POST["txtMaTaiKhoan"]) && $_POST["txtMatKhau"] != "")
+    {
+        $maTaiKhoan = $_POST["txtMaTaiKhoan"];
+        $matKhau = $_POST["txtMatKhau"];
+        $sql = "UPDATE taikhoan
+        SET MatKhau = '$matKhau'
+        WHERE MaTaiKhoan = '$maTaiKhoan' and BiXoa = 0";
+        DataProvider::ExecuteQuery($sql);
+    }
+    if(isset($_POST["txtTenHienThi"]) && isset($_POST["txtMaTaiKhoan"]) && $_POST["txtTenHienThi"] != "")
+    {
+        $maTaiKhoan = $_POST["txtMaTaiKhoan"];
+        $tenHienThi = $_POST["txtTenHienThi"];
+        $sql = "UPDATE taikhoan
+        SET TenHienThi = '$tenHienThi'
+        WHERE MaTaiKhoan = '$maTaiKhoan' and BiXoa = 0";
+        DataProvider::ExecuteQuery($sql);
+    }
+    if(isset($_POST["txtDiaChi"]) && isset($_POST["txtMaTaiKhoan"]) && $_POST["txtDiaChi"] != "")
+    {
+        $maTaiKhoan = $_POST["txtMaTaiKhoan"];
+        $diaChi = $_POST["txtDiaChi"];
+        $sql = "UPDATE taikhoan
+        SET DiaChi = '$diaChi'
+        WHERE MaTaiKhoan = '$maTaiKhoan' and BiXoa = 0";
+        DataProvider::ExecuteQuery($sql);
+    }
+    if(isset($_POST["txtDienThoai"]) && isset($_POST["txtMaTaiKhoan"]) && $_POST["txtDienThoai"] != "")
+    {
+        $maTaiKhoan = $_POST["txtMaTaiKhoan"];
+        $dienThoai = $_POST["txtDienThoai"];
+        $sql = "UPDATE taikhoan
+        SET DienThoai = '$dienThoai'
+        WHERE MaTaiKhoan = '$maTaiKhoan' and BiXoa = 0";
+        DataProvider::ExecuteQuery($sql);
+    }
+    if(isset($_POST["Email"]) && isset($_POST["txtMaTaiKhoan"]) && $_POST["Email"] != "")
+    {
+        $maTaiKhoan = $_POST["txtMaTaiKhoan"];
+        $email = $_POST["Email"];
+        $sql = "UPDATE taikhoan
+        SET Email = '$email'
+        WHERE MaTaiKhoan = '$maTaiKhoan' and BiXoa = 0";
+        DataProvider::ExecuteQuery($sql);
+    }
+    if(isset($_POST["txtMaLoaiTaiKhoan"]) && isset($_POST["txtMaTaiKhoan"]) && $_POST["txtMaLoaiTaiKhoan"] != "")
+    {
+        $maTaiKhoan = $_POST["txtMaTaiKhoan"];
+        $maLoaiTaiKhoan = $_POST["txtMaLoaiTaiKhoan"];
+        $sql = "UPDATE taikhoan
+        SET MaLoaiTaiKhoan = '$maLoaiTaiKhoan'
+        WHERE MaTaiKhoan = '$maTaiKhoan' and BiXoa = 0";
+        DataProvider::ExecuteQuery($sql);
+    }
+
+    DataProvider::ChangeURL("index.php?a=14");
+}
+
 ?>
