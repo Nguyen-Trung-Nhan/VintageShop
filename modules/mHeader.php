@@ -11,6 +11,8 @@
     </td></tr>
     </table>
     <?php
+        if(isset($_SESSION['maLoaiTaiKhoan']) && $_SESSION['maLoaiTaiKhoan'] == 2 )
+            DataProvider::ChangeURL("admin/index.php");
         if(isset($_SESSION['maTaiKhoan']))
         {
             include ("modules/mThongTinTaiKhoan.php");
