@@ -30,3 +30,4 @@
         DataProvider::ChangeURL("index.php?a=17");
     }
 ?>
+</table>
