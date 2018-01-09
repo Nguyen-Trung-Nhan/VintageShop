@@ -4,13 +4,12 @@
             $tenSanPham= $_POST["txtTenSanPham"];
             $giaSanPham= $_POST["nbGiaSanPham"];
             $soLuong= $_POST["txtSoLuong"];
-            $ngayNhap= $_POST["txtNgayNhap"];
             $moTa= $_POST["txtMoTa"];
             $maLoai= $_POST["txtMaLoai"];
             $maHang= $_POST["txtMaHang"];
             $hinhURL= $_POST["txtHinh"];        
             $sql ="insert into sanpham (TenSanPham,HinhURL,GiaSanPham,SoLuongTon,SoLuongBan,SoLuocXem,MoTa,NgayNhap,BiXoa,MaLoaiSanPham,MaHangSanXuat)
-            values('$tenSanPham','$hinhURL','$giaSanPham','$soLuong',0,0,'$moTa','$ngayNhap',0,$maLoai,$maHang)";
+            values('$tenSanPham','$hinhURL','$giaSanPham','$soLuong',0,0,'$moTa',now(),0,$maLoai,$maHang)";
             DataProvider::ExecuteQuery($sql);
             DataProvider::ChangeURL("index.php?a=2");
         }

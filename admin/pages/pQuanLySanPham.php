@@ -6,7 +6,6 @@
         <td>Tên Sản Phẩm</td>
         <td>Giá Sản Phẩm</td>
         <td>Số Lượng</td>
-        <td>Ngày Nhập</td>
         <td>Mô Tả</td>
         <td>Mã Loại</td>
         <td>Mã Hãng</td>
@@ -16,7 +15,6 @@
         <td><input type="text" name="txtTenSanPham" id="txtTenSanPham" size="10"></td>
         <td><input type="number" name="nbGiaSanPham" id="nbGiaSanPham" size="8"></td>
         <td><input type="text" name="txtSoLuong" id="txtSoLuong" size="6"></td>
-        <td><input type="datetime" name="txtNgayNhap" id="txtNgayNhap" size="10"></td>
         <td><input type="text" name="txtMoTa" id="txtMoTa"></td>
         <td><input type="text" name="txtMaLoai" id="txtMaLoai" size="5"></td>
         <td><input type="text" name="txtMaHang" id="txtMaHang" size="5"></td>
