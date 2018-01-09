@@ -40,7 +40,7 @@
         $_SESSION["TongTien"] = $tongTien;
     ?>
 </div>
-<a href="pages/qlGioHang/exDatHang.php">
+<a href="index.php?a=17">
     <img src="img/dathang.png" width="100">
 </a>
 </div>
