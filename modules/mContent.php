@@ -44,5 +44,11 @@
         case 18:
             include ("pages/pMuaThanhCong.php");
             break;
+        case 19:
+            include ("templates/tempTimKiemNangCao.php");
+            break;
+        case 20:
+            include ("pages/pTimKiemNangCao.php");
+            break;
     }
 ?>
