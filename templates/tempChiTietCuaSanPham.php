@@ -26,3 +26,23 @@
 </div>
 <div id="mota"><?php echo $moTa; ?></div>
 </div>
+
+
+
+<h2>5 Sản Phẩm Cùng Loại </h2>
+<?php
+            $sql = "SELECT sp.MaSanPham, sp.TenSanPham, sp.GiaSanPham, sp.HinhURL
+                    FROM SanPham sp
+                    WHERE sp.BiXoa = 0 AND sp.MaLoaiSanPham = $maLoaiSanPham and sp.MaSanPham != $maSanPham
+                    LIMIT 0,5";
+            $list = DataProvider::ExecuteQuery($sql);
+            while($row = mysqli_fetch_array($list)){
+            $maSanPham = $row["MaSanPham"];
+            $tenSanPham = $row["TenSanPham"];
+            $giaSanPham = $row["GiaSanPham"];
+            $hinhURL = $row["HinhURL"];
+            include ("templates/tempThumbProduct.php");
+            }
+
+?>
+
