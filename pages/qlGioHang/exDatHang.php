@@ -13,11 +13,11 @@
 if(isset($_SESSION["gioHang"])){
     $maDonDatHang = mt_rand(1,100000);
     $maChiTietDonDatHang = mt_rand(100001,2147483647);
-    if(isset($_SESSION["maLoaiTaiKhoan"])){
-        $maLoaiTaiKhoan = $_SESSION["maLoaiTaiKhoan"];
+    if(isset($_SESSION["maTaiKhoan"])){
+        $maTaiKhoan = $_SESSION["maTaiKhoan"];
     }
     $sql = "insert into dondathang (MaDonDatHang,NgayLap,TongThanhTien,MaTaiKhoan,MaTinhTrang)
-        values('$maDonDatHang',now(),$tongTien,$maLoaiTaiKhoan,1)";
+        values('$maDonDatHang',now(),$tongTien,$maTaiKhoan,1)";
     DataProvider::ExecuteQuery($sql);
 
         $gioHang = unserialize($_SESSION["gioHang"]);

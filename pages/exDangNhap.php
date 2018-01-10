@@ -26,7 +26,6 @@
                 if(strrpos($url, "a=0") != "")
                     DataProvider::ChangeURL("index.php");
                 else
-                    //  DataProvider::ChangeURL("" . $_SESSION["curURL"]);
                     DataProvider::ChangeURL("index.php");
             }
         }
