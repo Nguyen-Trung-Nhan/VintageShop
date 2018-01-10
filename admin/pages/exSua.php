@@ -168,5 +168,39 @@ if(isset($_GET["b"]) && $_GET["b"] == 4)
 
     DataProvider::ChangeURL("index.php?a=14");
 }
-
+if(isset($_GET["b"]) && $_GET["b"] == 5 ){
+if(isset($_POST["txtMaDonDatHang"]) && isset($_POST["dtNgayLap"]) && $_POST["dtNgayLap"] != ""){
+    $maDonDatHang = $_POST["txtMaDonDatHang"];
+    $ngayLap = $_POST["dtNgayLap"];
+    $sql = "UPDATE dondathang
+    SET NgayLap = '$ngayLap'
+    WHERE MaDonDatHang = '$maDonDatHang'";
+    DataProvider::ExecuteQuery($sql);
+}
+if(isset($_POST["txtMaDonDatHang"]) && isset($_POST["txtTongTien"]) && $_POST["txtTongTien"] != ""){
+    $maDonDatHang = $_POST["txtMaDonDatHang"];
+    $tongTien = $_POST["txtTongTien"];
+    $sql = "UPDATE dondathang
+    SET TongThanhTien = '$tongTien'
+    WHERE MaDonDatHang = '$maDonDatHang'";
+    DataProvider::ExecuteQuery($sql);
+}
+if(isset($_POST["txtMaDonDatHang"]) && isset($_POST["txtMaTaiKhoan"]) && $_POST["txtMaTaiKhoan"] != ""){
+    $maDonDatHang = $_POST["txtMaDonDatHang"];
+    $maTaiKhoan = $_POST["txtMaTaiKhoan"];
+    $sql = "UPDATE dondathang
+    SET MaTaiKhoan = '$maTaiKhoan'
+    WHERE MaDonDatHang = '$maDonDatHang'";
+    DataProvider::ExecuteQuery($sql);
+}
+if(isset($_POST["txtMaDonDatHang"]) && isset($_POST["txtMaTinhTrang"]) && $_POST["txtMaTinhTrang"] != ""){
+    $maDonDatHang = $_POST["txtMaDonDatHang"];
+    $maTinhTrang = $_POST["txtMaTinhTrang"];
+    $sql = "UPDATE dondathang
+    SET MaTinhTrang = '$maTinhTrang'
+    WHERE MaDonDatHang = '$maDonDatHang'";
+    DataProvider::ExecuteQuery($sql);
+}
+DataProvider::ChangeURL("index.php?a=17");
+}
 ?>
