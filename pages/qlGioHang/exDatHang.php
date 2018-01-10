@@ -31,7 +31,6 @@ if(isset($_SESSION["gioHang"])){
             $maSanPham = $p->id;
             $giaSanPham = $row['GiaSanPham'];
             $soLuong = $p->num;
-            $tongSoLuong = $tongSoLuong + $p->num;
             $sql = "INSERT into chitietdondathang(MaChiTietDonDatHang,SoLuong,GiaBan,MaDonDatHang,MaSanPham)
             values ('$maChiTietDonDatHang','$soLuong','$giaSanPham','$maDonDatHang','$maSanPham')";
             DataProvider::ExecuteQuery($sql);

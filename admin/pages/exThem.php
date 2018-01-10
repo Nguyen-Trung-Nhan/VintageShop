@@ -1,5 +1,5 @@
 <?php
-        if(isset($_POST["txtTenSanPham"]) && isset($_POST["nbGiaSanPham"]) && isset($_POST["txtMaLoai"]) && isset($_POST["txtMaHang"]) && isset($_GET["b"]) && $_GET["b"] == 1){
+        if(isset($_POST["txtTenSanPham"]) && isset($_POST["nbGiaSanPham"]) && $_POST["nbGiaSanPham"] > 0 && isset($_POST["txtMaLoai"]) && isset($_POST["txtMaHang"]) && isset($_GET["b"]) && $_GET["b"] == 1){
 
             $tenSanPham= $_POST["txtTenSanPham"];
             $giaSanPham= $_POST["nbGiaSanPham"];
