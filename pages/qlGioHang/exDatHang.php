@@ -34,9 +34,12 @@ if(isset($_SESSION["gioHang"])){
             $sql = "INSERT into chitietdondathang(MaChiTietDonDatHang,SoLuong,GiaBan,MaDonDatHang,MaSanPham)
             values ('$maChiTietDonDatHang','$soLuong','$giaSanPham','$maDonDatHang','$maSanPham')";
             DataProvider::ExecuteQuery($sql);
-            $sql = "UPDATE sanpham SET SoLuongTon = (SoLuongTon - $soLuong) and SoLuongBan = (SoLuongBan +$soLuong)
+            $sql = "UPDATE sanpham SET SoLuongTon = (SoLuongTon - $soLuong)
             WHERE MaSanPham = $maSanPham";
             DataProvider::ExecuteQuery($sql);
+            $sql = "UPDATE sanpham SET SoLuongBan = (SoLuongBan + $soLuong)
+            WHERE MaSanPham = $maSanPham";
+            DataProvider::ExecuteQuery($sql);      
         }
     
     unset($_SESSION["TongTien"]);
